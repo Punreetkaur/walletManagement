@@ -1,0 +1,48 @@
+[
+    {
+      "id": "P0001",
+      "name": "Punreet Kaur",
+      "card_number": "XXXXXXXXXXX345",
+      "cvc": 499,
+      "type": "./assets/images/visa.jpeg",
+      "valid":"03/22",
+      "validity":true,
+      "total":450,
+      "transactions":[
+        {
+          "id":"tran_123",
+          "product_name":"apple i phone",
+          "price":433,
+          "date":"14/04/2019",
+          "description":"new product with 6gb ram"
+        },
+        {
+          "id":"tran_456",
+          "product_name":"samsung note 10",
+          "price":901,
+          "date":"14/04/2019",
+          "description":"new product"
+        }
+      ]
+    },
+    {
+      "id": "P0002",
+      "name": "amrit singh",
+      "card_number": "XXXXXXXXXXX678",
+      "cvc": 499,
+      "type": "/assets/images/mastercard.jpeg",
+      "valid":"11/12",
+      "validity":false,
+
+      "total":950,
+      "transactions":[
+        {
+          "id":"tran_888",
+          "product_name":"Phone",
+          "price":433,
+          "date":"14/04/2019",
+          "description":"new product with 6gb ram"
+        }
+      ]
+    }
+  ]

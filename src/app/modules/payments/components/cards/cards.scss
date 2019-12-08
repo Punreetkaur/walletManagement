@@ -1,0 +1,61 @@
+
+.visa-type{
+    height: 40px;
+    width: 40px;
+}
+.card-padding{
+    padding-bottom: 12px;
+  }
+  .card-color{
+    background-color:  white;
+  }
+  .add-card-fa{
+      float: right;
+      color: gray;
+      font-size: 24px;
+      cursor: pointer;
+  }
+.card-outer{
+    width: 230px;
+    height: 135px;
+    display: block;
+    white-space: nowrap;
+    text-decoration: none;
+    // vertical-align: baseline;
+    font-family: ProximaNova-Regular;
+    text-align: center;
+    margin: 0;
+    min-width: 83px;
+    line-height: 36px;
+    padding: 2%;
+    border-radius: 4px;
+    overflow: visible;
+    border: 1px solid #bdbebd;
+}
+.cardnumber {
+    opacity: .5;
+    font-size: 10px;
+    letter-spacing: .6px;
+    text-align: left;
+    margin-bottom: 2px;
+    color: #333;
+  }
+.card-input {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    color: #3a3f51;
+    background-color: #fff;
+    border: 1px solid #dde6e9;
+    border-radius: 2px;
+    box-shadow: none;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    background-image: none;
+    font-size: 14px;
+    line-height: 1.52857143;
+  }
+  .border-outer{
+    border: 2px solid purple
+
+  }

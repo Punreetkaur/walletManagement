@@ -1,0 +1,28 @@
+<div class="row" *ngIf="loggedIn">
+   
+
+    <div class="col-lg-5 background_cards">
+        
+        <app-cards>
+    
+        </app-cards>
+    </div>
+    
+    
+    <div class="col-lg-7 background_transaction">
+            <div class="logout" >
+                    <button type="button"  (click) ="logout()" class="btn btn-primary">Logout</button>
+        
+            </div>
+        <app-transactions >
+    
+        </app-transactions>
+    </div>
+</div>
+<div *ngIf="!loggedIn" class="display-flex">
+        <button type="button"  (click) ="welcome()" class="btn btn-primary welcome-btn">WELCOME (click me!)</button>
+
+</div>
+
+
+

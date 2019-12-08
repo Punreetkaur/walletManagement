@@ -1,0 +1,23 @@
+.display-flex{
+    display: flex;
+}
+.h3{
+ color: gray !important;
+
+}
+.background_cards{
+    background:#f5f8f9;min-height: 800px;
+}
+.background_transaction{
+    background-color: whitesmoke;
+}
+.welcome-btn{
+    margin: auto;
+    margin-top: 50px;
+}
+.logout{
+    float: right;
+    position: relative;
+    z-index: 10001;
+    margin-right: 10px;
+}

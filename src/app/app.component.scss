@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "ProximaNova-Regular";
+    src: url("../assets/fonts/ProximaNova-Regular.ttf") format("ttf");
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "ProximaNova-semibold";
+    src: url("../assets/fonts/ProximaNova-Semibold.ttf") format("ttf");
+    font-style: normal;
+  }
+  .font-proxima-reg{
+    font-family: ProximaNova-Regular;
+  }
+ .heading{
+   color: gray;
+ }
+ .padding-5{
+   padding: 5%;
+ }
+  .btn-primary{
+    background-color: mediumpurple !important;
+    border-color: mediumpurple !important;;
+  }
+  
