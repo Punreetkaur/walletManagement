@@ -4,7 +4,8 @@
                         
                         <h3 class="heading col-lg-6"> Current Balance</h3>
                         <h3 class="heading col-lg-6 text-center mr-2" [ngStyle]="{'color': balance>=900  ? 'yellowgreen':'mediumpurple'}">
-                                       $ {{balance}}
+                                       $ {{balance.toFixed(0)}}
+                                       
                         </h3>
                        
                 </div>
@@ -17,8 +18,8 @@
                         <div class="col-8">
                             <div style="display: flex">
                                     <span class="pr-2" (click)="expand(trans.id)">
-                                            <i *ngIf="expanded "  class="fa fa-minus-circle" aria-hidden="true"></i>
-                                            <i *ngIf="!expanded" class="fa fa-plus-circle" aria-hidden="true"></i>
+                                            <i *ngIf="expanded && (trans.id=== expandedId)"  class="fa fa-minus-circle" aria-hidden="true"></i>
+                                            <i [hidden]="expanded && (trans.id=== expandedId)" class="fa fa-plus-circle" aria-hidden="true"></i>
                                         </span>
                                     <h4 class="transname">
                                             {{trans.product_name}}
@@ -27,7 +28,7 @@
                             </div>
                                
                                 
-                                <div class="d-inlineflex" style="color:gray" *ngIf="expanded" >
+                                <div class="d-inlineflex" style="color:gray" *ngIf="expanded && (trans.id=== expandedId)" >
                                         <p class="pl-2">{{trans.description}} </p>
                                         <p class="pl-2"># {{trans.id}} </p>
                                         <p class="pl-2">{{trans.date }} </p>

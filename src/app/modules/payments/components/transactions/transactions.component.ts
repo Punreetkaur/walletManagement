@@ -16,6 +16,7 @@ export class TransactionsComponent implements OnInit {
   public transactions :any=[]
   expanded: boolean;
   balance: {};
+  expandedId: any;
   constructor(
     public paymentService: PaymentService) {
      
@@ -34,7 +35,7 @@ export class TransactionsComponent implements OnInit {
 
   }
   expand(id){
-    // this.expanded =id;
+    this.expandedId =id;
     this.expanded=!this.expanded;
   }
  
