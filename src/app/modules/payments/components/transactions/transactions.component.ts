@@ -15,6 +15,7 @@ export class TransactionsComponent implements OnInit {
   // @Input ('idTrans') idTrans:Observable <string>
   public transactions :any=[]
   expanded: boolean;
+  balance: {};
   constructor(
     public paymentService: PaymentService) {
      
@@ -27,7 +28,8 @@ export class TransactionsComponent implements OnInit {
   getTransactions(){
   }
   getData() {
-   var data=this.paymentService.getTransactionById()
+   var data=this.paymentService.getTransactionById();
+   this.balance=data['total'];
    this.transactions=data['transactions']
 
   }
