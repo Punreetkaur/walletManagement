@@ -49,7 +49,7 @@
                 <p class="cardnumber">CARD NUMBER</p>
           <div class="form-group">
 
-            <input type="text" maxlength="19"    placeholder="Card Number" class="card-input" formControlName="cardNumber"
+            <input type="text"     placeholder="Card Number" class="card-input" formControlName="cardNumber"
                    >    
             <control-messages style="position: absolute;" [control]="paymentForm['controls'].cardNumber"></control-messages>
           </div>
@@ -70,7 +70,7 @@
             <div class="mt-4">
               <p class="cardnumber">VALID THRU</p>
               <div class="form-group">
-                <input type="text" placeholder="mm/yy"   class="card-input"  formControlName="validDate">
+                <input type="text"  placeholder="mm/yy"   class="card-input"  formControlName="validDate">
                 <control-messages style="position: absolute;" [control]="paymentForm['controls'].validDate"></control-messages>
               </div>
             </div>
@@ -101,4 +101,40 @@
           $("#addCardModal").modal();
         });
       </script>
+<script>
+$("#date").mask("99/99");
+$("#date").keyup(function() {
+  //get the date
+  var datevalue = $(this).val();
 
+  //only if the date is full like this: 'xx/xxxx' continue
+  if (datevalue.length == 5) {
+    verifyDate(datevalue);
+  } else {
+    clean();
+  }
+});
+
+function clean() {
+  $('#msg').html('');
+}
+
+function verifyDate(datevalue) {
+
+  if (datevalue != null || datevalue != '') {
+
+    //split the date as a tmp var
+    var tmp = datevalue.split('/');
+
+    //get the month and year
+    var month = tmp[0];
+    var year = tmp[1];
+
+    if (month >= 1 && month <= 12) {
+      //clean the message
+      clean();
+
+    } else {
+      $('#msg').html('Month is invalid.');
+    }
+  }</script>

@@ -17,6 +17,7 @@ export class TransactionsComponent implements OnInit {
   expanded: boolean;
   balance: {};
   expandedId: any;
+  decimalPart: any;
   constructor(
     public paymentService: PaymentService) {
      
@@ -31,6 +32,7 @@ export class TransactionsComponent implements OnInit {
   getData() {
    var data=this.paymentService.getTransactionById();
    this.balance=data['total'];
+   this.decimalPart=data['totalDecimal'];
    this.transactions=data['transactions']
 
   }

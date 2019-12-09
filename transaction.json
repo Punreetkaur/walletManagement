@@ -7,19 +7,22 @@
       "type": "./assets/images/visa.jpeg",
       "valid":"2 July,2022",
       "validity":true,
-      "total":450.08,
+      "total":450,
+      "totalDecimal":88,
       "transactions":[
         {
           "id":"tran_123",
           "product_name":"apple i phone",
-          "price":433.89,
+          "price":433,
+          "priceDecimal":89,
           "date":"14 Nov 2018",
           "description":"new product with 6gb ram"
         },
         {
           "id":"tran_456",
           "product_name":"samsung note 10",
-          "price":901.06,
+          "price":907,
+          "priceDecimal":16,
           "date":"14 April, 2018",
           "description":"new product"
         }
@@ -35,11 +38,13 @@
       "validity":false,
 
       "total":950.89,
+      "totalDecimal":38,
       "transactions":[
         {
           "id":"tran_888",
           "product_name":"Phone",
-          "price":433.22,
+          "price":433,
+          "priceDecimal":22,
           "date":"16 March, 2019",
           "description":"new product with 6gb ram"
         }

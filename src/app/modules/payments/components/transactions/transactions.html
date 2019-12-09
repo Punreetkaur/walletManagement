@@ -4,7 +4,9 @@
                         
                         <h3 class="heading col-lg-6"> Current Balance</h3>
                         <h3 class="heading col-lg-6 text-center mr-2" [ngStyle]="{'color': balance>=900  ? 'yellowgreen':'mediumpurple'}">
-                                       $ {{balance.toFixed(0)}}
+                                       $ {{balance.toFixed(0)}} . <span class="cents">
+                                               {{decimalPart}}
+                                       </span> 
                                        
                         </h3>
                        
@@ -41,7 +43,9 @@
                         </div>
                         <div class="col-4">
                           <span [ngStyle]="{'color': trans.price >=900  ? 'yellowgreen':'mediumpurple'}">
-                                $ {{trans.price}}
+                                $ {{trans.price.toFixed(0)}} .  <span class="cents">
+                                                {{trans.priceDecimal}}
+                                        </span> 
                           </span>    
                         </div>
                 </div>
