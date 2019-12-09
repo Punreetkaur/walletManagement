@@ -101,40 +101,4 @@
           $("#addCardModal").modal();
         });
       </script>
-<script>
-$("#date").mask("99/99");
-$("#date").keyup(function() {
-  //get the date
-  var datevalue = $(this).val();
 
-  //only if the date is full like this: 'xx/xxxx' continue
-  if (datevalue.length == 5) {
-    verifyDate(datevalue);
-  } else {
-    clean();
-  }
-});
-
-function clean() {
-  $('#msg').html('');
-}
-
-function verifyDate(datevalue) {
-
-  if (datevalue != null || datevalue != '') {
-
-    //split the date as a tmp var
-    var tmp = datevalue.split('/');
-
-    //get the month and year
-    var month = tmp[0];
-    var year = tmp[1];
-
-    if (month >= 1 && month <= 12) {
-      //clean the message
-      clean();
-
-    } else {
-      $('#msg').html('Month is invalid.');
-    }
-  }</script>
